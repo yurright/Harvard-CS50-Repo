@@ -26,6 +26,9 @@
 - map numbers to other numbers 
 - in ASCII, 1 is expressed in computers as 49
 
+![ASCII Chart](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/Standard-ASCII-Table_large.webp)
+
+
 ## ASCII uses 7 bits (8bits), How Can You Express more languages like Korean or emojis?
 
 - add digits! that is, add bytes!
