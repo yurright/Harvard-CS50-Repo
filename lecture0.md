@@ -4,7 +4,8 @@
 ## Unary, Binary, Decimal
 
 - unary, base-1
-- binary, base-2 : used by computer through** transistors**
+  
+- binary, base-2 : used by computer through **transistors**
 - decimal, base-10
 
 ## Bit, Byte
@@ -16,22 +17,22 @@
 
 - 1 byte can express 256 diferent numbers (0 to 255)
 
-## Then How Can You Express Letters?
+## How Can You Express Letters?
 - map numbers to letters -> ASCII
 - in ASCII code, 65 means A
 
-## Then How Do Differentiate 65 and A?
+## How Do Differentiate 65 and A?
 
 - map numbers to other numbers 
 - in ASCII, 1 is expressed in computers as 49
 
-## ASCII uses 7 bits (8bits), Then How Can You Express more languages like Korean or emojis?
+## ASCII uses 7 bits (8bits), How Can You Express more languages like Korean or emojis?
 
 - add digits! that is, add bytes!
 - ASCII -> Unicode
 - unicode is a mapping too, but has more bytes(32 bytes), to express all kinds of human language
 - 32 bytes is quite a lot, hence a lot of extra space, so they made emojis
-- emojis use combinations of emojis to express diverse emojis
+- emojis use combinations of simple emojis to express diverse emojis
 
 ## How Can A Computer Know When To Interpret 65 as a Number, or Letter?
 
@@ -62,12 +63,12 @@
 
 ## Criteria for Good Code
 - correctness (does it do what it needs to do)
-- good design (
-  - faster,
-  - maintenance,
-  - does it repeat code?,
+- good design 
+  - faster
+  - maintenance
+  - does it repeat code?
     - use loop
-  - low probability of mistakes)
+  - low probability of mistakes
     - use variables for repeated things
     - use const to make certain variables unchangeable
 - style (readable aesthetics, indention)
