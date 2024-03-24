@@ -57,7 +57,7 @@
 - use abstraction and express the solution into verbs, for "functions" or "pseudo code", (write as comments//), start with high-level solution
 - if you use abstractions, you don't have to understand the underlying mechanisms everytime you need to do something and can just execute
 - crack the function into smaller problems, or smaller algorithms
-
+![Computational Mindeset](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/computational-problem-solving.png)
 ## Source Code and Machine Code
 - source code is the code the person wrote
 - computers cannot understand source code
