@@ -67,6 +67,56 @@ const bigInt = 1234567890123456789012345678901234567890n;
 - 반면 객체는 데이터 컬렉션이나 복잡한 개체(entity)를 표현할 수 있습니다.
 - 그런데 객체형은 원시형과 달리 다양한 데이터를 담을 수 있습니다. 키로 구분된 데이터 집합이나 복잡한 개체(entity)를 저장할 수 있죠.
 
+<details>
+<summary>객체 생성</summary>
+
+객체는 중괄호 {…}를 이용해 만들 수 있습니다. 중괄호 안에는 ‘키(key): 값(value)’ 쌍으로 구성된 프로퍼티(property) 를 여러 개 넣을 수 있는데, 키엔 문자형, 값엔 모든 자료형이 허용됩니다. 프로퍼티 키는 ‘프로퍼티 이름’ 이라고도 부릅니다.
+</details>
+<details>
+<summary>객체의 프로퍼티 접근</summary>
+  
+-  객체에선 키를 이용해 프로퍼티를 쉽게 찾을 수 있습니다.
+  
+- 두 가지 방법으로 프로퍼티 읽을 수 있음: 
+  <details>
+  <summary>  1) 점 표기법</summary>
+    점 표기법(dot notation)을 이용하면 프로퍼티 값을 읽는 것도 가능합니다.
+    
+    ```    
+    // 프로퍼티 값 얻기
+    alert( user.name ); // John
+    alert( user.age ); // 30
+    ```
+    
+  </details>
+  <details>
+  <summary>  2) 대괄호 표기법</summary>
+    
+    - 여러 단어를 조합해 프로퍼티 키를 만든 경우엔, 점 표기법을 사용해 프로퍼티 값을 읽을 수 없습니다.
+    ```
+    // 문법 에러가 발생합니다. 
+        user.likes birds = true
+    ```
+    
+    - 키가 유효한 변수 식별자가 아닌 경우엔 점 표기법 대신에 '대괄호 표기법(square bracket notation)'이라 불리는 방법을 사용할 수 있습니다.
+      
+    - 대괄호 표기법은 키에 어떤 문자열이 있던지 상관없이 동작합니다.
+    ```
+    let user = {};
+  
+    // set
+    user["likes birds"] = true;
+      
+    // get
+    alert(user["likes birds"]); // true
+
+    // delete
+    delete user["likes birds"];
+    ```
+
+    </details>
+
+
 ## Peculiarities
 ```
 typeof Math // "object"  (1)
@@ -87,13 +137,7 @@ typeof는 피연산자가 함수면 "function"을 반환합니다.
 아주 오래전에 만들어진 규칙이었기 때문에 하위 호환성 유지를 위해 남겨진 상태입니다. 
 한편, 실무에선 이런 특징이 매우 유용하게 사용되기도 합니다.
 
-<details>
-<summary>Click to toggle contents of `code`</summary>
 
-```
-CODE!
-```
-</details>
 
 
 ## Questions
