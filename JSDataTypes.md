@@ -114,8 +114,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
     delete user["likes birds"];
     ```
 
-    </details>
-
+</details>
 
 ## Peculiarities
 ```
@@ -123,22 +122,22 @@ typeof Math // "object"  (1)
 typeof null // "object"  (2)
 typeof alert // "function"  (3)
 ```
-Math는 수학 연산을 제공하는 내장 객체이므로 "object"가 출력됩니다.
+(1) Math는 수학 연산을 제공하는 내장 객체이므로 "object"가 출력됩니다.
 Math에 대해선 숫자형 챕터에서 학습하도록 하겠습니다. 
 내장 객체는 객체형이라는 것을 알려주기 위해 이런 예시를 작성해 보았습니다.
-typeof null의 결과는 "object"입니다. 
+
+(2) typeof null의 결과는 "object"입니다. 
 null은 별도의 고유한 자료형을 가지는 특수 값으로 객체가 아니지만, 
 하위 호환성을 유지하기 위해 이런 오류를 수정하지 않고 남겨둔 상황입니다. 
 언어 자체의 오류이므로 null이 객체가 아님에 유의하시기 바랍니다.
-typeof는 피연산자가 함수면 "function"을 반환합니다. 
+
+(3) typeof는 피연산자가 함수면 "function"을 반환합니다. 
 그러므로 typeof alert는 "function"을 출력해줍니다. 
 그런데 '함수’형은 따로 없습니다. 함수는 객체형에 속합니다. 
 이런 동작 방식이 형식적으론 잘못되긴 했지만, 
 아주 오래전에 만들어진 규칙이었기 때문에 하위 호환성 유지를 위해 남겨진 상태입니다. 
 한편, 실무에선 이런 특징이 매우 유용하게 사용되기도 합니다.
 
-
-
-
 ## Questions
 -what is class, map, set, prototype, constructor?? How is everything connected?
+
