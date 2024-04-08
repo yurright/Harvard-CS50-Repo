@@ -42,3 +42,8 @@ omega(n)
 - what is theta
 - how to define your own data type in JS, Solidity, ?
 - why is C not object-oriented programming?
+
+# Study
+- 데이터 타입 만드는 이론: ADT, 데이터 구조에 따라 사용하는 알고리즘 존재
+- 쎄타는 평균 같은 개념
+- 다음주 진도 나가고, 오늘 내용 추가 공부
