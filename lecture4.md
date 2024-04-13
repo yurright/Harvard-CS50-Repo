@@ -6,6 +6,8 @@ hexadecimal
 0x
 used to express addresses in memory
 
+## &, * operator
+
 & operator : get the address of a piece of data in memory
 * operator (de-reference operator): go to specific address
 
@@ -123,4 +125,81 @@ printf("%s\n", s);
 printf("%s\n", s+1);
 printf("%s\n", s+2); 
 ```
+
+즉, a string is just a sequence of characters identified by its first byte.
+
+스트링 비교 == 안 되는 것도 왜 그런지 생각해볼까?
+-> 첫 자의 주소값 비교가 되니까 ㅋㅋㅋ
+
+** 컴파일러는 +1 할 때 하나의 int 가 4 byte 인 점 감안할 수 있음. ->??? 정말?? 확인해보고 싶넹**
+
+```
+//둘 비교
+if(s == t)
+if(*s == *t && *(s+1) == *(t+1))
+```
+
+## how can we leverage this to solve other problems?
+
+copy string
+```
+string s;
+string t = s;
+```
+이렇게 하면, 주소가 복사돼서 완전 같은 메모리의 값이 되네!!
+img
+
+
+mistakes happen often when the user gives you input that you did not expect!
+
+
+copy by reference, copy by value: 지금은 copy by value 임-> copy by reference 궁금
+
+
+## malloc, free function
+malloc: memory allocation: use to ask the operations system for some number of bytes in advance, returns the first byte of that memory they found for you. 근데 \0 없기 때문에 메모리 얼마나 요청했는지 개발자가 기억하고 잇어야 함
+
+
+free: does the opposite. I'm done with this chunk.
+
+computer freeze: program 짰는데, 계속 malloc 으로 메모리 요청하고 free 는 안 해서 결국 메모리 없어져서 펑!
+
+```
+char *s;
+char *t = malloc(strlen(s) +1); // t is pointer for some randome chunk of free space
+
+for (int i=0; i < strlen(s) + 1; i++) // 이 코드 최적화는 아님. 계속 strlen 함수 루프마다 부르니까. 위에서 한 번 불러서 값 가져오는 게 낫다!!!!
+{
+  t[i] = s[i];
+}
+
+free(t); // malloc으로 메모리 할당했다면 반드시 끝내줘야 함!! free 하면 이제 다른 곳에서 이 메모리 사용할 수 있게 됨
+
+```
+이러면 스트링의 모든 값을 다른 메모리 공간에 복사해옴
+
+----
+**"공간을 확보한 후 값을 넣는 논리" 자주 사용되는 구조!!** 값을 저장하고 싶으면 무조건 자리부터 만드는 사고 장착해!
+**코드 최적화 방법 중 하나: 루프마다 반복적으로 불필요하게 부르는 함수 있는가?? 있다면 루프 전에 한 번만 불러서 값 가져와!**
+---
+
+NUL : \0
+NULL : address 0
+
+""latent bugs""
+
+## valgrind
+
+debug program: let into code and find memory errors
+
+memory loss: memory leak
+
+----
+allocate space, initialize value, print
+---
+garbage values in memory : initialize 안 하면 남아있던 쓰레기가 나올 수 있다!! 신기하다
+
+---
+
+
 
