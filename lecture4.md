@@ -201,5 +201,58 @@ garbage values in memory : initialize 안 하면 남아있던 쓰레기가 나�
 
 ---
 
+to swap two variables, you need third temporary variable -> 이 생각도 너무 활용도 높다 -> 이거 솔리디티에서 튜프로 해결한 적 있는듯. 궁금했던 거다! 천재다 천재
+---
+```
+//swap a and b
+int tmp = a;
+a = b;
+b = tmp;
+```
+근데 이걸 함수로 만들어서 swap(x,y) 하면 x,y 안 바뀜. -> x,y 의 값을 복사해서 인풋으로 사용하기 때문에 실제로 x,y가 바뀌지 않음!
+functions pass in (arguments) by value
+
+## what's going on under the hood when functions are called in C???
+
+when you run a program, you are loading the machine code to the computer's memory(RAM) from the computer's hard drive
+
+img
+
+img heap (heap is the chunk of memory where malloc grabs memory from, heap goes downward)
 
 
+img stack (stack memory kind of grows upward, stack is where functions have variables and have arguments stored temporarily)
+
+heap 과 stack 이 서로 만나면 문제 생기기 시작
+
+```
+//얜 아예 집 주소를 받아서 주소에 대해 스왑함
+swap(int *a, int *b)
+{
+int tmp = *a;
+a = *b;
+b = tmp;
+}
+```
+*a : go to a!!
+
+& * 라는 새로운 문법으로 locally scope 되는 C를 우회해 함수 안에서 다른 값에 접근할 수 있음!!!! 오 이거 그동안 해결하지 못했던 부분이다! 천재다
+--
+
+## heap overflow : 뭔지 잘 이해 안 됨!!
+heap에서 만져서 안 되는 부분 만졌을 때
+
+
+## stack overflow: 뭔지 잘 이해 안 됨!!
+
+## buffer overflow: 뭔지 잘 이해 안 됨!!
+
+
+get int input 어떻게 코드되는거냐 하면
+
+일단 자리 allocate 한 다음
+
+
+자리가 없으면 기억 못 함
+
+problem set 4 대박. 해봐야겠다!
