@@ -256,3 +256,14 @@ get int input 어떻게 코드되는거냐 하면
 자리가 없으면 기억 못 함
 
 problem set 4 대박. 해봐야겠다!
+
+
+----
+질문
+## heap overflow : 뭔지 잘 이해 안 됨!!
+heap에서 만져서 안 되는 부분 만졌을 때
+
+
+## stack overflow: 뭔지 잘 이해 안 됨!!
+
+## buffer overflow: 뭔지 잘 이해 안 됨!!
