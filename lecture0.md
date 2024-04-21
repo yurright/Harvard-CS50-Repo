@@ -54,7 +54,7 @@
 ## Computational Problem Solving
 - Define problem
 - define desired input and output
-- use abstraction and express the solution into verbs, for "functions" or "pseudo code", (write as comments//), start with high-level solution
+- use abstraction and express the solution into verbs, or "functions" or "pseudo code", (write as comments//), start with high-level solution
 - if you use abstractions, you don't have to understand the underlying mechanisms everytime you need to do something and can just execute
 - crack the function into smaller problems, or smaller algorithms
 ![Computational Mindeset](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/computational-problem-solving.png)
