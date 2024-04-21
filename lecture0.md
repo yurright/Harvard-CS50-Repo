@@ -33,8 +33,8 @@
 
 - add digits! that is, add bytes!
 - ASCII -> Unicode
-- unicode is a mapping too, but has more bytes(32 bytes), to express all kinds of human language
-- 32 bytes is quite a lot, hence a lot of extra space, so they made emojis
+- unicode is a mapping too, but has more bytes(32 bits), to express all kinds of human language
+- 32 bits is quite a lot, hence a lot of extra space, so they made emojis
 - emojis use combinations of simple emojis to express diverse emojis
 
 ## How Can A Computer Know When To Interpret 65 as a Number, or Letter?
