@@ -1,4 +1,13 @@
-# Solidity Data Types
+# Solidity : Implementing Lecture Ideas to Solidity
+
+## Data Types
+
+## Type Casting
+
+
+
+
+## References
 
 https://docs.soliditylang.org/en/latest/types.html
 
