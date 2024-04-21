@@ -1,7 +1,15 @@
 # Solidity : Implementing Lecture Ideas to Solidity
 
 ## Data Types
-
+bool, int, string etc. each data type has specific number of bits allocated
+in C,
+bool: 1 byte
+int: 4 bytes
+long: 8 bytes
+float: 4 bytes
+double: 8 bytes
+char: 1 byte
+string: ? byes
 ## Type Casting
 
 
