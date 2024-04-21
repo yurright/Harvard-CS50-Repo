@@ -14,7 +14,7 @@
 - big O, omega, theta
 
 ## Cannot == compare strings
-- so is solidity, why?
+- so is solidity, why? because string is actually an address!
 - can by using string library
 
 ## Sorting
