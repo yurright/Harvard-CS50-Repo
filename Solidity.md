@@ -56,6 +56,49 @@ In Solidity, variables can be stored in three locations: storage, memory, and st
 - **Stack:** Very limited size, used for small local variables
 By understanding the memory size of each data type and choosing appropriate data types and storage locations, developers can optimize their contracts for better performance on the Ethereum blockchain.
 
+## Data Structures
+
+Solidity provides several data structures that are essential for organizing and managing data in smart contracts. These data structures can be broadly categorized into three types: structs, arrays, and mappings. Each serves different purposes and has unique characteristics suitable for various use cases in blockchain development. Here's a detailed overview of each data structure:
+
+### Structs
+Structs in Solidity are custom-defined types that allow developers to group multiple variables of different types under a single name. This makes it easier to manage related data together. Structs are particularly useful for representing a record or a complex data entity that consists of multiple attributes.
+
+**Example of a Struct:**
+```solidity
+struct Voter {
+    uint weight;
+    bool voted;
+    address delegate;
+    uint vote;
+}
+```
+Structs can be declared within a contract or outside a contract to be used across multiple contracts. They are flexible and can include various types such as integers, strings, and other structs.
+
+### Arrays
+Arrays in Solidity are used to store data in a sequentially indexed way. They can be either fixed-size or dynamically-sized and are useful for storing collections of data such as lists of users, available tokens, or other sequential data.
+
+**Example of a Fixed-Size Array:**
+```solidity
+uint[3] fixedArray;
+```
+**Example of a Dynamic Array:**
+```solidity
+uint[] dynamicArray;
+```
+Arrays can hold primitive types like integers and booleans, as well as user-defined types like structs. They provide a way to access and manipulate collections of variables efficiently.
+
+### Mappings
+Mappings are another crucial data structure in Solidity, similar to hash tables or dictionaries in other programming languages. They map keys to values and are used to store and retrieve data efficiently based on the key. Mappings are particularly useful for associating unique identifiers with corresponding data, such as linking an Ethereum address to a user's balance or status.
+
+**Example of a Mapping:**
+```solidity
+mapping(address => uint) public balances;
+```
+Mappings do not store their keys, only their values. This means that you cannot iterate over mappings directly, and they effectively provide a way to manage data that associates unique keys with specific values.
+
+### Summary
+These data structures—structs, arrays, and mappings—are fundamental in Solidity for creating complex and efficient smart contracts. They allow developers to handle various types of data appropriately, from simple lists to complex entities with multiple attributes, and to perform data retrieval efficiently using keys. Understanding and utilizing these data structures effectively is essential for any developer working with Solidity and Ethereum smart contracts.
+
 
 ## Type Casting
 
