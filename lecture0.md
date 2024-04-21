@@ -21,7 +21,7 @@
 - map numbers to letters -> ASCII
 - in ASCII code, 65 means A
 
-## How Do Differentiate 65 and A?
+## How To Differentiate 65 and A?
 
 - map numbers to other numbers 
 - in ASCII, 1 is expressed in computers as 49
