@@ -28,9 +28,9 @@ Reference types do not store the data directly but store a reference to the loca
 
 ## Storage and Memory Considerations
 In Solidity, variables can be stored in three locations: storage, memory, and stack. The choice of storage location significantly impacts gas costs and efficiency:
-Storage: Persistent storage of contract state. Expensive in terms of gas cost.
-Memory: Temporary storage during function execution. Cheaper than storage but more expensive than the stack.
-Stack: Very limited size, used for small local variables
+- **Storage:** Persistent storage of contract state. Expensive in terms of gas cost.
+- **Memory:** Temporary storage during function execution. Cheaper than storage but more expensive than the stack.
+- **Stack:** Very limited size, used for small local variables
 By understanding the memory size of each data type and choosing appropriate data types and storage locations, developers can optimize their contracts for better performance on the Ethereum blockchain.
 
 
