@@ -59,5 +59,5 @@ Citations:
 
 
 ## Truncation Problem (Lecture 1)
-floating point value must be calculated with floats, not integers -> type casting
-imprecision occurs because of finite memory -> use double instead of floats(twice the memory like long-integer relationship)
+- floating point value must be calculated with floats, not integers -> type casting
+- imprecision occurs because of finite memory -> use double instead of floats(twice the memory like long-integer relationship)
