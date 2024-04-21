@@ -26,6 +26,29 @@ Reference types do not store the data directly but store a reference to the loca
 3. **Mappings**: Hash tables which implement an associative array that maps keys to values. Only the value types can be mappings. Mappings do not have a straightforward size like other types. They are key-value pairs where the key is not stored in the contract, but the value is. The size depends on the data type of the value
 4. **Strings**: Dynamically-sized UTF-8-encoded string data. Strings are dynamically sized and can potentially vary in size. The actual size in memory depends on the string content
 
+Below is a table in Markdown format that summarizes the memory size of each data type in Solidity:
+
+| Data Type                | Description                           | Memory Size (bits) |
+|--------------------------|---------------------------------------|--------------------|
+| **bool**                 | Boolean value (true/false)            | 8                  |
+| **int8 - int256**        | Signed integers (increments of 8)     | 8 to 256           |
+| **uint8 - uint256**      | Unsigned integers (increments of 8)   | 8 to 256           |
+| **fixedMxN/ufixedMxN**   | Fixed-point numbers (not fully supported) | M (8 to 256)    |
+| **address**              | Holds a 20-byte Ethereum address      | 160                |
+| **address payable**      | Same as address, but can receive Ether| 160                |
+| **bytes1 - bytes32**     | Fixed-size byte arrays                | 8 to 256           |
+| **string**               | Dynamically-sized UTF-8-encoded string| Variable           |
+| **Arrays**               | Depends on element type and length    | Variable           |
+| **Structs**              | Sum of sizes of individual elements   | Variable           |
+| **Mappings**             | Key-value pairs (size of value type)  | Variable           |
+
+### Notes on the Table:
+- **Fixed Point Numbers**: The `M` in `fixedMxN`/`ufixedMxN` represents the total number of bits, which can range from 8 to 256. The `N` represents the number of decimal places, which can be from 0 to 80, but these types are not fully supported yet in Solidity.
+- **Strings and Arrays**: The memory size for strings and arrays is variable and depends on their content or length and the type of elements they contain.
+- **Structs and Mappings**: The memory size for structs is the aggregate of the sizes of its fields, while mappings store only the values, and their size depends on the type of these values.
+
+This table provides a concise overview of how much memory each data type uses in Solidity, which is crucial for optimizing storage and gas costs in smart contracts.
+
 ## Storage and Memory Considerations
 In Solidity, variables can be stored in three locations: storage, memory, and stack. The choice of storage location significantly impacts gas costs and efficiency:
 - **Storage:** Persistent storage of contract state. Expensive in terms of gas cost.
