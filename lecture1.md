@@ -16,10 +16,12 @@
 
 ## Arguments and Statements, What's the Difference?
 ### Arguments
-Arguments are the actual values or data that you pass to a function or method when it is called. These values are used by the function to perform operations or calculations. Arguments are also known as "actual parameters" because they represent the actual data provided to functions at runtime.
+
+**Arguments are the actual values or data that you pass to a function or method when it is called.** These values are used by the function to perform operations or calculations. Arguments are also known as "actual parameters" because they represent the actual data provided to functions at runtime.
 For example, in a function call like sum(5, 10), the numbers 5 and 10 are the arguments. They are the specific values passed to the function sum to perform addition.
 ### Statements
-On the other hand, statements are the individual instructions or commands in a programming language that perform a specific action. A statement could be a function call, a variable declaration, an assignment, a control flow construct (like if-else or loops), or any other instruction that tells the computer to perform something.
+
+On the other hand, statements are the **individual instructions or commands** in a programming language that perform a specific action. A statement could be a function call, a variable declaration, an assignment, a control flow construct (like if-else or loops), or any other instruction that tells the computer to perform something.
 For example, int x = 5; is a statement that declares a variable x and assigns it the value 5. Similarly, if (x > 0) { return x; } is a conditional statement that checks if x is greater than zero and returns x if the condition is true.
 ### Bottom Line
 Arguments are the values passed to functions to be processed, while statements are the lines of code that make up the instructions in a program. Understanding the difference between these two is crucial for writing clear and effective code.
