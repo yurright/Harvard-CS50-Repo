@@ -1,5 +1,7 @@
 # Data Structures
 
+The best way to implement a dynamic set depends upon the operations that you need to support. 
+
 ## Operations
 Operations on a dynamic set can be grouped into two categories: queries, which
 simply return information about the set, and modifying operations, which change
