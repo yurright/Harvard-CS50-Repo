@@ -1,4 +1,4 @@
-# Data Structrues
+# Data Structures
 
 ## Arrays
 1) Understanding Fundamental Concepts
@@ -30,14 +30,20 @@
 
 ## Linked List
 
-<details>
-<summary>Definition</summary>
+1) Understanding Fundamental Concepts
 
-- A linked list is also a linear data structure, but unlike arrays, its elements (known as nodes) are not stored in contiguous memory locations. Each node contains the data and a reference (or link) to the next node in the sequence
-</details>
+   <details>
+   <summary>Definition</summary>
 
-<details>
-<summary>Properties</summary>
+   - A linked list is also a linear data structure, but unlike arrays, its elements (known as nodes) are not stored in contiguous memory locations. Each node contains the data and a reference (or link) to the next node in the sequence
+   </details>
 
-- Linked lists are dynamic, meaning they can grow and shrink in size as needed during runtime. They allow for efficient insertions and deletions because these operations do not require the elements to be contiguous
-</details>
+   <details>
+   <summary>Properties</summary>
+
+   - Linked lists are dynamic, meaning they can grow and shrink in size as needed during runtime. They allow for efficient insertions and deletions because these operations do not require the elements to be contiguous
+   </details>
+
+2) Practicing Coding
+
+3) Exploring Real World Applications
