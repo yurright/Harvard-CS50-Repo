@@ -1,5 +1,27 @@
 # Data Structures
 
+## Operations
+Operations on a dynamic set can be grouped into two categories: queries, which
+simply return information about the set, and modifying operations, which change
+the set. Here is a list of typical operations. Any speciûc application will usually
+require only a few of these to be implemented. 
+
+- **Search**(S, k): A query that, given a set S and a key value k, returns a pointer x to an element
+in S such that x.key D k, or NIL if no such element belongs to S.
+- **Insert**(S, x): A modifying operation that adds the element pointed to by x to the set S. We
+usually assume that any attributes in element x needed by the set implementation have already been initialized. 
+- **Delete**(S, x): A modifying operation that, given a pointer x to an element in the set S, removes x from S. (Note that this operation takes a pointer to an element x, not
+a key value.) 
+- **Minimum**(S) and **Maximum**(S): Queries on a totally ordered set S that return a pointer to the element of S with
+the smallest (for MINIMUM) or largest (for MAXIMUM) key. 
+- **Successor**(S, x):A query that, given an element x whose key is from a totally ordered set S,
+returns a pointer to the next larger element in S, or NIL if x is the maximum
+element. 
+- **Predecessor**(S, x): A query that, given an element x whose key is from a totally ordered set S,
+returns a pointer to the next smaller element in S, or NIL if x is the minimum
+element. 
+  
+
 ## Arrays
 1) Understanding Fundamental Concepts
    
@@ -78,8 +100,11 @@
 4) Comparative Analysis
 
 - memory allocation
-- access times
+- access times: O(1)에 k번째 원소를 확인 가능
 - operations like insertion and deletion
+   - insertion:
+   - deletion:
+   -     
 
 ## Linked List
 
