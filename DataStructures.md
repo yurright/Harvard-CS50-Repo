@@ -3,9 +3,9 @@
 The best way to implement a dynamic set depends upon the operations that you need to support. 
 
 ## Operations
-Operations on a dynamic set can be grouped into two categories: queries, which
-simply return information about the set, and modifying operations, which change
-the set. Here is a list of typical operations. Any speciûc application will usually
+Operations on a dynamic set can be grouped into two categories: **queries**, which
+simply return information about the set, and **modifying operations**, which change
+the set. Here is a list of typical operations. Any specific application will usually
 require only a few of these to be implemented. 
 
 - **Search**(S, k): A query that, given a set S and a key value k, returns a pointer x to an element
