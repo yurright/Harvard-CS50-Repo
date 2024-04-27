@@ -1,28 +1,31 @@
 # Data Structrues
 
 ## Arrays
+1) Understanding Fundamental Concepts
+   
+    <details>
+    <summary>Definition</summary>
+    
+    - Arrays are linear data structures that store elements of the same data type in contiguous memory locations. They allow random access to     elements, which means any element can be accessed directly if its index is known
+    </details>
 
-<details>
-<summary>Definition</summary>
-  
-- Arrays are linear data structures that store elements of the same data type in contiguous memory locations. They allow random access to elements, which means any element can be accessed directly if its index is known
-</details>
+    <details>
+    <summary>Properties</summary>
 
-<details>
-<summary>Properties</summary>
+    - Arrays have a fixed size, which means the number of elements they can store is defined when they are created. This makes them static
+    </details>
 
-- Arrays have a fixed size, which means the number of elements they can store is defined when they are created. This makes them static
-</details>
+2) Practicing Coding
+    <details>
+    <summary>Implementation Code in JS</summary>
 
-<details>
-<summary>Implementation Code in JS</summary>
+    </details>
 
-</details>
+3) Exploring Real World Applications
+    <details>
+    <summary>Examples</summary>
 
-<details>
-<summary>Examples</summary>
-
-</details>
+    </details>
 
 
 ## Linked List
