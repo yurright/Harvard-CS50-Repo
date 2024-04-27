@@ -75,6 +75,11 @@
       [10808번: 알파벳 개수](https://www.acmicpc.net/problem/10808)
     </details>
 
+4) Comparative Analysis
+
+- memory allocation
+- access times
+- operations like insertion and deletion
 
 ## Linked List
 
