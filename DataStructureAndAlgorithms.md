@@ -137,3 +137,8 @@ element.
       [leetcode: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
     </details>
 
+
+
+### References
+[JS algoritm Github](https://github.com/trekhleb/javascript-algorithms)
+
