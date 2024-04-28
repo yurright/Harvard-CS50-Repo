@@ -96,9 +96,11 @@ element.
     <details>
     <summary>Examples</summary>
        
-      [10808번: 알파벳 개수](https://www.acmicpc.net/problem/10808)
+      [BaekJun 10808번: 알파벳 개수](https://www.acmicpc.net/problem/10808)
 
-      [10818번: 최소, 최대](https://sukvvon.tistory.com/84)
+      [BaekJun 10818번: 최소, 최대](https://sukvvon.tistory.com/84)
+
+      [leetcode: Two Sum](https://leetcode.com/problems/two-sum/description/)
     </details>
 
 5) Comparative Analysis
