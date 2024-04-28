@@ -97,9 +97,11 @@ element.
     <summary>Examples</summary>
        
       [10808번: 알파벳 개수](https://www.acmicpc.net/problem/10808)
+
+      [10818번: 최소, 최대](https://sukvvon.tistory.com/84)
     </details>
 
-4) Comparative Analysis
+5) Comparative Analysis
 
 - memory allocation
 - access times: O(1)에 k번째 원소를 확인 가능
