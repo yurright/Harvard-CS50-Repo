@@ -140,5 +140,5 @@ element.
 
 
 ### References
-[JS algoritm Github](https://github.com/trekhleb/javascript-algorithms)
+[JS Algorithms Github](https://github.com/trekhleb/javascript-algorithms)
 
