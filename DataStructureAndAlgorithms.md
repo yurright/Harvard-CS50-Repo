@@ -131,3 +131,9 @@ element.
 2) Practicing Coding
 
 3) Exploring Real World Applications
+       <details>
+    <summary>Examples</summary>
+
+      [leetcode: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+    </details>
+
