@@ -1,6 +1,6 @@
 /**
 * Problem: 1614. Maximum Nesting Depth of the Parentheses
-* Solution: Using a Stack to track open depth of string
+* Solution: Using a Stack to track the open depth of a string
 */
 
 /**
