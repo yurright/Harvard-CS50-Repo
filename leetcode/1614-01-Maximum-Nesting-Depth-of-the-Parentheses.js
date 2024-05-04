@@ -62,6 +62,12 @@ var maxDepth = function(s) {
 */
 
 /**
+* Adjustment3:
+* using === instead of ==
+* Results: increases runtime to 49 ms, increases Memory to 49 MB
+*/
+
+/**
 * Questions:
 * I don't know why this is classified into Stacks
 */
