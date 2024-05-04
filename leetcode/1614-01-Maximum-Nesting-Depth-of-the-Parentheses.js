@@ -69,5 +69,5 @@ var maxDepth = function(s) {
 
 /**
 * Questions:
-* I don't know why this is classified into Stacks
+* How can you use stacks to solve this problem?
 */
