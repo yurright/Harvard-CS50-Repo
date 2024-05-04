@@ -50,6 +50,13 @@ var maxDepth = function(s) {
 };
 
 /**
-* Refinements:
-* else {continue} is not needed. reduces runtime to 58 ms, and Memory to 48 MB
+* Refinements1:
+* else {continue} is not needed. 
+* Results: decreases runtime to 58 ms, and decreases Memory to 48.83 MB
+*/
+
+/** 
+* Refinements2:
+* instead of (let i=0; i< n-1; i++) and s[i], use (let c of s) and c
+* Results: decreases runtime to 45 ms, but increases Memory to 48.85 MB
 */
