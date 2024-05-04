@@ -11,7 +11,6 @@ var maxDepth = function(s) {
    var stack = [];
    var dMax = 0;
 
-
     for(let c of s) {
         if(c == "(") {
             stack.push(c);
