@@ -138,6 +138,34 @@ element.
     </details>
 
 
+## Stacks (analogy: Stack of Pancakes)
+[reference youtube: CSDojo](https://www.youtube.com/watch?v=A3ZUpyrnCbM )
+
+-data 불러오기: 가장 위의 것만 가능
+- how to implement: using array (1 pointer: end of qeue)
+- js: array and pop() and push()
+-  (O(1))
+
+- empty stack을 어레이로 만들어놓고 넣고 빼며 사용할 수 있네
+
+
+## Queues (analogy: people in line)
+[reference youtube: CSDojo](https://www.youtube.com/watch?v=A3ZUpyrnCbM )
+
+- how to implement: using array (2 pointers: front of queue, after last of queue, pointer: index 나타내는 variable)
+- 앞이 것이 나가는 건: 첫 번째 포인터 한 칸 뒤로, 뒤에 추가되는 것도 포인터 한 칸 뒤로 하고 어레이에 넣어주고, 너무 길어지지 않아? 어레이 길이 고정한 후 circular array로 길이 넘어가면 다시 0으로 포인터 오게 이어주면 됨 근데 이 경우 길이 n 어레이에 n-1개의 데이터만 저장 가능! (이걸 막기 위해 어디까지 가능한지 알기 위해 마지막 포인터를 마지막 한 칸 뒤에 가리키게 만들었네!(두 포인터 같으면 빈 큐 되니까. 대박)
+- functions: dequeue / enqueue (O(1))
+  
+
+## Deque(pronounced as deck) (Double Ended Queue)
+[reference youtube: CSDojo](https://www.youtube.com/watch?v=A3ZUpyrnCbM )
+양쪽에서 디큐 가능 큐 가능
+-how implement: similar to queue. use circular array 2 pointer
+- functions: addLeft / removeLeft(popLeft) / addRight / removeRight  (O(1))
+
+## "([])(){}(())()()" 같은 스트링 주어졌을 때 brackets balanced면 true 반환하는 프로그램 만들어봐라! 재밌네
+[reference youtube: CSDojo](https://www.youtube.com/watch?v=A3ZUpyrnCbM )
+
 
 ### References
 [JS Algorithms Github](https://github.com/trekhleb/javascript-algorithms)
