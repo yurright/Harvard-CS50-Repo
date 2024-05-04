@@ -48,3 +48,8 @@ var maxDepth = function(s) {
     }
     return dMax;
 };
+
+/**
+* Refinements:
+* else {continue} is not needed. reduces runtime to 58 ms, and Memory to 48 MB
+*/
