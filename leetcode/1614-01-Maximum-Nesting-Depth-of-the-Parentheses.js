@@ -60,3 +60,8 @@ var maxDepth = function(s) {
 * instead of (let i=0; i< n-1; i++) and s[i], use (let c of s) and c
 * Results: decreases runtime to 45 ms, but increases Memory to 48.85 MB
 */
+
+/**
+* Questions:
+* I don't know why this is classified into Stacks
+*/
