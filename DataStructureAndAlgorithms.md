@@ -143,7 +143,7 @@ class Node {
   Node next
 }
 ```
-<img scr = "https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/tree-linked-list.png"/>
+![linked list and tree](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/tree-linked-list.png)
 
 
 
