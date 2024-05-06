@@ -187,7 +187,7 @@ class Node {
 ```
 
 ex. express following tree in code:
-![](https://github.com/yurright/Harvard-CS50-Repo/tree.png)
+![tree example](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/tree.png)
 
 
 ### References
