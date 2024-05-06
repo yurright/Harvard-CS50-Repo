@@ -178,6 +178,8 @@ class Node {
 ## Tree
 - similar to linked list, but in linked lists each node can only be linked to one other node, in a tree **a node can be linked to multiple nodes**
 - no two references that head to the same node!!!
+![not a tree](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/not-a-tree.png)
+
 ```
 class Node {
   int data
