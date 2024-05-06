@@ -137,6 +137,13 @@ element.
       [leetcode: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
     </details>
 
+```
+class Node {
+  int data
+  Node next
+}
+```
+
 
 ## Stacks (analogy: Stack of Pancakes)
 [reference youtube: CSDojo](https://www.youtube.com/watch?v=A3ZUpyrnCbM )
@@ -165,6 +172,21 @@ element.
 
 ## "([])(){}(())()()" 같은 스트링 주어졌을 때 brackets balanced면 true 반환하는 프로그램 만들어봐라! 재밌네
 [reference youtube: CSDojo](https://www.youtube.com/watch?v=A3ZUpyrnCbM )
+
+
+## Tree
+- similar to linked list, but in linked lists each node can only be linked to one other node, in a tree **a node can be linked to multiple nodes**
+-
+```
+class Node {
+  int data
+  Node child1
+  Node child2
+  Node child3
+}
+```
+
+ex. express following tree in code:
 
 
 ### References
