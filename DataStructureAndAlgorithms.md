@@ -177,7 +177,9 @@ class Node {
 
 
 ## Tree
+- def: a structure where nodes are connected to each other, and there is a way(and only one way) to go from the root node to every other node in the structure"
 - similar to linked list, but in linked lists each node can only be linked to one other node, in a tree **a node can be linked to multiple nodes**
+- root node: node without parent
 - no two references that head to the same node!!! image below is **NOT A TREE**!:
 ![not a tree](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/not-a-tree.png)
 
@@ -203,6 +205,12 @@ class Node {
 }
 ```
 ![binary tree](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/binary-tree.png)
+
+ex. find_sum(root) (O(n))
+: use recursion(1) define base case, 2)given one root, express the sum of current root using sum of root )
+find O: 
+first find number of times the function is called: number of node * 2
+second: each time function called, how much time to execute? -> O(1)
 
 ### References
 [JS Algorithms Github](https://github.com/trekhleb/javascript-algorithms)
