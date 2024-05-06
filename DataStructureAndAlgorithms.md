@@ -177,6 +177,7 @@ class Node {
 
 
 ## Tree
+- reference: [CSDojo](https://www.youtube.com/watch?v=1-l_UOFi1Xw&list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H&index=9)
 - def: a structure where nodes are connected to each other, and there is a way(and only one way) to go from the root node to every other node in the structure"
 - similar to linked list, but in linked lists each node can only be linked to one other node, in a tree **a node can be linked to multiple nodes**
 - root node: node without parent
