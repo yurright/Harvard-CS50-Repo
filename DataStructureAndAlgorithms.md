@@ -143,6 +143,7 @@ class Node {
   Node next
 }
 ```
+![tree/linked list](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/tree-linked-list.png)
 
 
 ## Stacks (analogy: Stack of Pancakes)
