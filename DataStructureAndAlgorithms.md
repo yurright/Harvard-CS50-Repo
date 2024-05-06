@@ -176,7 +176,7 @@ class Node {
 
 ## Tree
 - similar to linked list, but in linked lists each node can only be linked to one other node, in a tree **a node can be linked to multiple nodes**
--
+- no two references that head to the same node!!!
 ```
 class Node {
   int data
@@ -189,6 +189,16 @@ class Node {
 ex. express following tree in code:
 ![tree example](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/tree.png)
 
+## Binary Tree
+- tree but each node has 2 children
+```
+class Node {
+  int data
+  Node left
+  Node right
+}
+```
+![binary tree](https://github.com/yurright/Harvard-CS50-Repo/blob/main/resources/binary-tree.png)
 
 ### References
 [JS Algorithms Github](https://github.com/trekhleb/javascript-algorithms)
