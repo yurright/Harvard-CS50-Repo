@@ -364,11 +364,13 @@ prototypes in C
 
 face recognition 사용해보기
 
-variable scope python은 없어? 1:19
+variable scope python은 없어? 1:19 : 전역변수 같은 개념은 있는데,
+여기서의 맥락은
+기준은 def. while이 아니라 def 안에서는 다 통용됨 def 기준. global 로 전역 변수로 만들어줄 수 있음. 
 
 call main() 잘 사용되는지
 
-python도 받는 데이터 형식으로 JSON 많이 사용해?
+python도 받는 데이터 형식으로 JSON 많이 사용해? CSV? 다 정보. 
 
 python은 데이터 처리 특화된 함수가 많이 내장되어있네.
 라이브러리도 많고
@@ -377,4 +379,4 @@ keyword in 너무 좋다. js도 있낭?
 
 echo $? 은 js에 있낭?
 
-
+---
