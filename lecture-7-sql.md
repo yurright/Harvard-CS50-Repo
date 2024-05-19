@@ -258,6 +258,42 @@ delete
 
 IMDb
 
+entity relationship diagram
+
+multiple tables, 
+
+every cell should have one value!
+(shows table 과 genres table 분리)
+
+relational db: allows you to factor out some of the info
+1:다 만들 수 있음
+many to many relaionship 만들 수 있음 (1:1 한계 벗어남)
+
+사람 테이블, 쇼 테이블, 스타 테이블로 다대다관계
+
+sqlite data types:
+
+BLOB (binary large objects)
+INTEGER
+NUMERIC (numbers that are formatted specially: date,)
+REAL (flow, decimal 있는)
+TEXT 
+
+additional constraints in sqlite:
+NOT NULL
+UNIQUE
+
+PRIMARY KEY(id) : the db will use that column as unique indentifier
+FOREIGN KEY
+
+other sqls have more data types
+
+
+FOREIGN KEY(show_id) REFERENCES shows(id)
+
+
+
+
 --
 Questions
 
@@ -273,4 +309,4 @@ lambda function
 
 sql 다시 보고 공부해야 할 것 같음. select, count(*) 등 아직 잘 이해 안 감
 
-
+blob crypto
