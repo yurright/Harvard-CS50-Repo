@@ -310,3 +310,6 @@ lambda function
 sql 다시 보고 공부해야 할 것 같음. select, count(*) 등 아직 잘 이해 안 감
 
 blob crypto
+
+sql. 문제 심화 학습하기 + HTML/CSS/JS: 
+
