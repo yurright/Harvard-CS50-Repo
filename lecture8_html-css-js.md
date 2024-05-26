@@ -246,14 +246,88 @@ https://www.example.com/path?key=value&key=value
 </form>
 ```
 구글 검색 페이지 됨
+--
+
+
 
 ----
 <input> 태그 한 번 읽어보는 것도 재밋네
 
 
 ---
+regular expressions (regex) 잘 모르겟음
+
+```
+<form action="https://www.google.com/search" pattern=".+@.+\.edu"  method="get">
+  <input name="q">
+  <button>Search</button>
+</form>
+```
+but browser can't be trusted 클라이언트 잘못된 반응 막기에 부적절.
+dev tool에서 pattern 바꿀 수 있음 ㅋㅋ
+----
+client side validation is not safe!
+---
 
 
+validator.w3.org
 
+---
+css
 
+terms
+properties!! (not attributes)
+selectors (select tag)
+-type selector
+-class selector
+-ID selector
+-attribute selector
 
+----
+html entities
+
+---
+semantic tags.
+---
+bootstrap link tag로 연결한 거
+---
+JS
+
+html onsubmit: 제출 시 js code 쓸 수 있음
+
+<script> 태그
+```
+<head>
+<script>
+function greet()
+{
+  alert('hello, ' + document.querySelector('#name').value);
+}
+</script>
+</head>
+```
+
+```
+<script>
+document.querySelector('form').addEventListener('submit', function(event) {
+alert('hello' + document.querySelector('#name').value);
+event.preventDefault();
+})
+</script>
+
+```
+
+```
+<script>
+document..addEventListener('DOMContentLoaded', function(event) {
+document.querySelector('form').addEventListener('submit', function(event) {
+alert('hello' + document.querySelector('#name').value);
+event.preventDefault();
+})
+</script>
+```
+DOMContentLoaded: 돔 다 로딩됐을 때 실행해라
+
+---
+window objec
+navigator object
