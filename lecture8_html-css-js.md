@@ -79,6 +79,181 @@ you device uses this number on the packet(virtual envelope)
 dns: has dictionary(hash table) of (fully qualified) domain name and ip address
 
 
+
 ---
+local dns server 보통 인터넷 제공사, 네트워크 provider
+
+dns server has hierarchy system. ask 윗 윗. 
+
+root servers: know all
+
+when buy domain name: 
+
+----
+DHCP
+옛날에는 처음 구매하면 기기를 configure 설정해서 근처 router, 근처 DNS 지정해주고 감
+
+nowadays done automatically.
+
+DHCP; dynamic host configuration protocol
+
+DHCP servers answer questions "what should be my DNS server and router?"
+
+요즘은 처음 기기 켜면 ask to local network 'hey what ip address should i use for my dns server and my router?'
+
+또 하나 DHCP 가 하는 것 중에
+tell you device(mac, phone) what ip address your device should use
+
+how the internet works
+---
+
+http: the most popular form of internet nowadays
+
+http: world wide web
+
+http is a protocol that governs how web browsers and how
+web servers speak.
+
+ip: protocol that governs how computers address each other on the internet
+
+tcp: governs how computers keep track of sequences of packets, and multiplex among different services
+
+protocol: 
+client : initiate request
+server: respond request
+
+world wide web uses the HTTP protocol which standardizes what goes inside the envelopes in order to allow a web browser to request and receive information from a web server
+
+http: hypertext transfer protocol.
+https: secure version . connection encrypted
+
+intercept packet 해도 무슨 말인지 이해 못하도록.
+
+example url:
+https://www.example.com/
+
+마지막 /: the default page for the website ("the root" web page)
+마지막에 /path: a path (file,folder)
+마지막에 /file.html  요즘은 숨기는 경향 있음. 
+마지막에 /folder/file.html
+
+즉, 이 마지막 부분은 누군가의 하드 드라이브의 폴더,파일의 위치에 대한 정보.
+
+www.example.com 부분
+: fully qualified domain name (full domain name)
+www: host name. the name of a specific server that lives somewhere
+that lives somewhere in that domain.
+(human convention)
+
+대부분 www로 시작하지만 굳이 안 써도 됨.
+
+www add/remove 가능.
+
+.com : top level domain
+
+com: commercial
+
+.ai 도 국가 코드인데 ai 처럼 사용 ㅋㅋ
+
+https: scheme, the protocol. 
+
+.edu 사용하려면 기관으로부터 인증 받아야 함.
+
+----
+GET POST
+
+2 different ways to request a server 
+= 2 different ways to format requests inside the envelope
+
+1 GET: just getting info
+2 POST: sending info
+
+---
+GET
+
+http messages
+```
+GET / HTTP/2
+Host: www.harvard.edu
+...
+```
+원하는 정보가 GET 다음에 오는 / (default page)
+HTTP/2: version of http
+Host: www.harvard.edu : http header
+
+
+server에서 오는 답변은
+```
+HTTP/2 200
+Content-Type: text/html
+...
+```
+$ curl -I https://www.harvard.edu/
+
+curl: connct to url
+
+curl: simmulate being a browser
+
+status code: 301: redirect. 
+
+status code: 404 file is not found. 아!
+
+3: redirect
+
+4: client 잘못
+
+5: 서버 잘못
+
+----
+
+http://safetyschool.org/
+: yale로 감ㅋㅋ
+
+---
+
+HTML; markup lang
+
+연산은 못함.
+2 concepts in HTML
+tags
+attributes
+
+----
+
+http-server 뭐야? 이 부분 어렵다
+
+$ http-server
+
+open tag, close tag, attribute can have value. 
+children. element!
+
+parser: browser can be seen as parser
+
+js 는 그 트리를 업데이트함.
+
+phishing: socially engineered.
+
+----
+meta로 sns preview 만들기 
+--
+https://www.example.com/path?key=value&key=value
+
+---
+```
+<form action="https://www.google.com/search" method="get">
+  <input name="q">
+  <button>Search</button>
+</form>
+```
+구글 검색 페이지 됨
+
+----
+<input> 태그 한 번 읽어보는 것도 재밋네
+
+
+---
+
+
+
 
 
