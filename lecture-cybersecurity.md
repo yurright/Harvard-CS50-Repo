@@ -26,3 +26,17 @@ end-to-end encryption (employess at google cannot know)
 -imessage o. whatsapp o. signal o. telegram o. 
 
 zoom: new meeting selection: enhanced encryption(default, no one between A and Zoom can see), end-to-end encryption(no one between A and B can see)
+
+
+
+
+deletion
+: even if you empty trash, it doesn't go away. your operating system just forgets where it is.
+
+-> secure deletion
+: change all to 0 -> still not fully secure
+
+full-disk encryption
+-> 이해 안 됨.
+맥: FireVault
+Window: BitLocker
