@@ -9,3 +9,10 @@ digital signature: someone sends you challenge, encrypt with private key and mak
 -> encrypt with private key, decrypt with public key
 
 
+passkeys.
+
+brute force 
+cost of attcak
+
+2fa authentication
+
